@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const port = process.env.PORT;
 
@@ -7,8 +8,6 @@ const handlerErrors = require("./middlewares/handlerErrors");
 
 // ROUTERS
 const moviesRouter = require("./routers/moviesRouter");
-const notFound = require("./middlewares/notFound");
-const handlerErrors = require("./middlewares/handlerErrors");
 
 // MIDDLEWARES
 // globali
