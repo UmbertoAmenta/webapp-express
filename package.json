@@ -1,0 +1,24 @@
+{
+  "name": "webapp-express",
+  "version": "1.0.0",
+  "description": "web-app server-side",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env app.js",
+    "watch": "node --env-file=.env --watch app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UmbertoAmenta/webapp-express.git"
+  },
+  "author": "Umberto Amenta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UmbertoAmenta/webapp-express/issues"
+  },
+  "homepage": "https://github.com/UmbertoAmenta/webapp-express#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
