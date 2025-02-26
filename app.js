@@ -11,9 +11,9 @@ const moviesRouter = require("./routers/moviesRouter");
 
 // MIDDLEWARES
 // globali
+app.use(cors({ origin: process.env.FE_CLIENT }));
 app.use(express.static("public"));
 app.use(express.json());
-app.use(cors({ origin: process.env.FE_CLIENT }));
 
 app.get("/", (req, res) => {
   res.send("Server in funzione");
