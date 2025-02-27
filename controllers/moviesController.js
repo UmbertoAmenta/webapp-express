@@ -15,6 +15,10 @@ const index = (req, res) => {
         message: `Database Query Failed: ${sql}`,
       });
     }
+
+    const movies = results.map((movie) => {
+      movie.image = `${process.env.BE_SERVER}/imgs/${movie.image}`;
+    });
     res.json(results);
   });
 };
